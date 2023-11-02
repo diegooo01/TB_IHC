@@ -1,23 +1,53 @@
-* {
-  box-sizing: border-box;
-}
 body {
   font-size: 14px;
+  margin: 0;
 }
-.v247_2 {
-  width: 100%;
-  height: 4662px;
-  background: rgba(255,255,255,1);
-  opacity: 1;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
+.main{
+padding: 5rem;
 }
-.v247_156 {
+.container{
+  width:85%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+.header{
+  background:white;
+  color: white;
+  border-bottom: 2px solid rgba(0,0,0,1);
+  padding: 3rem 0;
+  position: fixed;
+  left: 0;
+  top:0;
+  right: 0;
+  z-index: 100;
+}
+.logo-nav-container{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation ul{
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+.navigation ul li{
+  display:inline-block;
+}
+ .navigation ul li a{
+display: block;
+padding:0.5rem 1 rem;
+transition: all 0.2s linear;
+ }
+ .navigation ul li a:hover{
+   color: rgba(139,175,146,1);
+ }
+ 
+
+.img_fondo {
   width: 100%;
   height: 519px;
-  background: url("../images/v247_156.png");
+  background: url("img_fondo.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -27,7 +57,7 @@ body {
   left: 0px;
   overflow: hidden;
 }
-.v247_4 {
+.fondo_pie_pag {
   width: 100%;
   height: 508px;
   background: rgba(0,0,0,1);
@@ -37,7 +67,7 @@ body {
   left: 1px;
   overflow: hidden;
 }
-.v247_5 {
+.fondo_caracteristicas {
   width: 100%;
   height: 902px;
   background: rgba(87,133,94,1);
@@ -51,80 +81,78 @@ body {
   border-bottom-right-radius: 60px;
   overflow: hidden;
 }
-.v247_6 {
-  width: 100%;
+.fondo_cara{
+  width:50px;
+  height:50px;
+  background: none;
+  position:absolute;
+  top:1970px;
+  left:0px;
+}
+.fondo_descarga {
+  width: 53%;
   height: 392px;
   background: rgba(87,133,94,1);
   opacity: 1;
   position: absolute;
   top: 3855px;
-  left: 173px;
+  left: 25%;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   overflow: hidden;
 }
-.v247_7 {
-  width: 100%;
-  height: 104px;
-  background: rgba(255,255,255,1);
-  opacity: 1;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.v247_8 {
+.etiqueta_caracteristicas {
   width: 124px;
   color: rgba(0,0,0,1);
   position: absolute;
   top: 40px;
-  left: 733px;
+  left: 1020px;
   font-family: Actor;
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
   text-align: left;
 }
-.v247_9 {
+.etiqueta_contactanos {
   width: 109px;
   color: rgba(0,0,0,1);
   position: absolute;
   top: 40px;
-  left: 897px;
+  left: 1344px;
   font-family: Actor;
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
   text-align: left;
 }
-.v247_11 {
+.etiqueta_quienes {
   width: 147px;
   color: rgba(0,0,0,1);
   position: absolute;
   top: 40px;
-  left: 533px;
+  left: 673px;
   font-family: Actor;
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
   text-align: left;
 }
-.v247_12 {
+.btn_obtener {
   width: 190px;
   height: 36px;
-  background: url("../images/v247_12.png");
+  background: none;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
   top: 34px;
-  left: 1228px;
+  left: 1685px;
   overflow: hidden;
 }
-.v247_13 {
+.forma_obtener {
   width: 190px;
   height: 36px;
   background: rgba(87,133,94,1);
@@ -138,7 +166,7 @@ body {
   border-bottom-right-radius: 200px;
   overflow: hidden;
 }
-.v247_14 {
+.etiqueta_obtener {
   width: 166px;
   color: rgba(255,255,255,1);
   position: absolute;
@@ -149,62 +177,66 @@ body {
   font-size: 20px;
   opacity: 1;
   text-align: left;
+  transition: all 0.4s linear;
 }
-.v247_15 {
-  width: 667px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 1692px;
-  left: 119px;
-  font-family: Actor;
-  font-weight: Regular;
-  font-size: 22px;
-  opacity: 1;
-  text-align: center;
+.etiqueta_obtener:hover{
+  color: black;
 }
-.v247_16 {
+.inicio_quienes {
   width: 725px;
   color: rgba(0,0,0,1);
   position: absolute;
   top: 1593px;
-  left: 90px;
+  left: 250px;
   font-family: Arimo Hebrew Subset;
   font-weight: Bold;
   font-size: 28px;
   opacity: 1;
   text-align: center;
 }
-.v247_17 {
+.descripcion_quienes {
+  width: 667px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 1700px;
+  left: 279px;
+  font-family: Actor;
+  font-weight: Regular;
+  font-size: 22px;
+  opacity: 1;
+  text-align: center;
+}
+.subtitulo_plantas {
   width: 551px;
   color: rgba(87,133,94,1);
   position: absolute;
   top: 3044px;
-  left: 700px;
+  left: 710px;
   font-family: Arimo Hebrew Subset;
   font-weight: Regular;
   font-size: 45px;
   opacity: 1;
   text-align: center;
 }
-.v247_30 {
+.caja_cactus {
   width: 308px;
-  height: 252px;
-  background: url("../images/v247_30.png");
+  height: 270px;
+  background: none;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   opacity: 1;
   position: absolute;
   top: 3161px;
-  left: 552px;
+  left: 816px;
   overflow: hidden;
 }
-.v247_31 {
+.img_cactus {
   width: 308px;
   height: 205px;
-  background: url("../images/v247_31.png");
+  background: url("img_cactus.png");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   opacity: 1;
   position: absolute;
@@ -212,42 +244,32 @@ body {
   left: 0px;
   overflow: hidden;
 }
-.v247_32 {
+.cuadro_cactus {
   width: 200px;
   height: 242px;
-  background: url("../images/v247_32.png");
+  background: none;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   opacity: 1;
   position: absolute;
   top: 10px;
   left: 68px;
+  border: 2px solid rgba(0,0,0,1);
   overflow: hidden;
 }
-.v247_33 {
+.fondoverde_cactus {
   width: 200px;
   height: 46px;
   background: rgba(139,175,146,1);
   opacity: 1;
   position: absolute;
   top: 196px;
-  left: 0px;
-  border: 1.5px solid rgba(0,0,0,1);
-  overflow: hidden;
-}
-.v247_34 {
-  width: 200px;
-  height: 242px;
-  background: rgba(87,133,94,0);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  left: -2px;
   border: 2px solid rgba(0,0,0,1);
   overflow: hidden;
 }
-.v247_35 {
+.palabra_cactus {
   width: 63px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -259,23 +281,24 @@ body {
   opacity: 1;
   text-align: center;
 }
-.v247_36 {
+.caja_orquidea {
   width: 200px;
   height: 242px;
-  background: url("../images/v247_36.png");
+  background: none;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
   top: 3171px;
-  left: 1116px;
+  left: 1380px;
+  border: 2px solid rgba(0,0,0,1);
   overflow: hidden;
 }
-.v247_37 {
+.img_orquidea {
   width: 186px;
   height: 186px;
-  background: url("../images/v247_37.png");
+  background: url("img_orquidea.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -285,42 +308,18 @@ body {
   left: 5px;
   overflow: hidden;
 }
-.v247_38 {
-  width: 200px;
-  height: 242px;
-  background: url("../images/v247_38.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.v247_39 {
+.fondoverde_orquidea {
   width: 200px;
   height: 46px;
   background: rgba(139,175,146,1);
   opacity: 1;
   position: absolute;
   top: 196px;
-  left: 0px;
-  border: 1.5px solid rgba(0,0,0,1);
-  overflow: hidden;
-}
-.v247_40 {
-  width: 200px;
-  height: 242px;
-  background: rgba(87,133,94,0);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  left: -2px;
   border: 2px solid rgba(0,0,0,1);
   overflow: hidden;
 }
-.v247_41 {
+.palabra_orquidea {
   width: 96px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -332,55 +331,32 @@ body {
   opacity: 1;
   text-align: center;
 }
-.v247_42 {
+.caja_cinta {
   width: 200px;
   height: 242px;
-  background: url("../images/v247_42.png");
+  background: none;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
   top: 3171px;
-  left: 868px;
+  left: 1132px;
+  border: 2px solid rgba(0,0,0,1);
   overflow: hidden;
 }
-.v247_43 {
-  width: 200px;
-  height: 242px;
-  background: url("../images/v247_43.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.v247_44 {
+.fondoverde_cinta {
   width: 200px;
   height: 46px;
   background: rgba(139,175,146,1);
   opacity: 1;
   position: absolute;
   top: 196px;
-  left: 0px;
-  border: 1.5px solid rgba(0,0,0,1);
-  overflow: hidden;
-}
-.v247_45 {
-  width: 200px;
-  height: 242px;
-  background: rgba(87,133,94,0);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  left: -2px;
   border: 2px solid rgba(0,0,0,1);
   overflow: hidden;
 }
-.v247_46 {
+.palabra_cinta {
   width: 178px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -392,10 +368,10 @@ body {
   opacity: 1;
   text-align: center;
 }
-.v247_47 {
+.img_cinta {
   width: 190px;
   height: 177px;
-  background: url("../images/v247_47.png");
+  background: url("img_cinta.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -405,67 +381,71 @@ body {
   left: 5px;
   overflow: hidden;
 }
-.v247_48 {
+.pie_subtitulo_contacto {
   width: 77px;
   color: rgba(255,255,255,1);
   position: absolute;
   top: 4319px;
-  left: 731px;
+  left: 931px;
   font-family: Arimo Hebrew Subset;
   font-weight: Bold;
   font-size: 17px;
   opacity: 1;
   text-align: center;
 }
-.v247_49 {
+.pie_subtitulo_flora_company {
   width: 128px;
   color: rgba(255,255,255,1);
   position: absolute;
   top: 4319px;
-  left: 479px;
+  left: 540px;
   font-family: Arimo Hebrew Subset;
   font-weight: Bold;
   font-size: 17px;
   opacity: 1;
   text-align: center;
 }
-.v247_50 {
+.pie_subtitulo_obten {
   width: 313px;
   color: rgba(255,255,255,1);
   position: absolute;
   top: 4319px;
-  left: 986px;
+  left: 1336px;
   font-family: Arimo Hebrew Subset;
   font-weight: Bold;
   font-size: 17px;
   opacity: 1;
   text-align: left;
 }
-.v247_51 {
+.texto_correo {
   width: 189px;
   color: rgba(217,217,217,1);
   position: absolute;
   top: 4425px;
-  left: 735px;
+  left: 935px;
   font-family: Actor;
   font-weight: Regular;
   font-size: 16px;
   opacity: 1;
   text-align: center;
 }
-.v247_52 {
+.etiqueta_pie_inicio {
   width: 37px;
   color: rgba(217,217,217,1);
   position: absolute;
   top: 4350px;
-  left: 479px;
+  left: 547px;
   font-family: Actor;
   font-weight: Regular;
   font-size: 16px;
   opacity: 1;
   text-align: center;
+  transition: all 0.2s linear;
 }
-.v247_53 {
+.etiqueta_pie_inicio:hover{
+  color:rgba(139,175,146,1);
+}
+.pie_copyright {
   width: 511px;
   color: rgba(217,217,217,1);
   position: absolute;
@@ -477,106 +457,112 @@ body {
   opacity: 1;
   text-align: center;
 }
-.v247_54 {
+.pie_terminos_y_condiciones {
   width: 354px;
   color: rgba(217,217,217,1);
   position: absolute;
   top: 4583px;
-  left: 955px;
+  left: 1425px;
   font-family: Actor;
   font-weight: Regular;
   font-size: 18px;
   opacity: 1;
   text-align: center;
+  transition: all 0.2s linear;
 }
-.v247_55 {
+.pie_terminos_y_condiciones:hover{
+  color:rgba(139,175,146,1);
+}
+.etiqueta_pie_caracteristicas {
   width: 99px;
   color: rgba(217,217,217,1);
   position: absolute;
   top: 4425px;
-  left: 479px;
+  left: 547px;
   font-family: Actor;
   font-weight: Regular;
   font-size: 16px;
   opacity: 1;
   text-align: center;
+  transition: all 0.2s linear;
 }
-.v247_56 {
+.etiqueta_pie_caracteristicas:hover{
+  color:rgba(139,175,146,1);
+}
+.etiqueta_pie_contactanos {
   width: 87px;
   color: rgba(217,217,217,1);
   position: absolute;
   top: 4462px;
-  left: 479px;
+  left: 547px;
   font-family: Actor;
   font-weight: Regular;
   font-size: 16px;
   opacity: 1;
   text-align: center;
+  transition: all 0.2s linear;
 }
-.v247_57 {
+.etiqueta_pie_contactanos:hover{
+  color:rgba(139,175,146,1);
+}
+.etiqueta_pie_quienes {
   width: 118px;
   color: rgba(217,217,217,1);
   position: absolute;
   top: 4387px;
-  left: 479px;
+  left: 547px;
   font-family: Actor;
   font-weight: Regular;
   font-size: 16px;
   opacity: 1;
   text-align: center;
+  transition: all 0.2s linear;
 }
-.v247_58 {
+.etiqueta_pie_quienes:hover{
+  color:rgba(139,175,146,1);
+}
+.texto_web {
   width: 133px;
   color: rgba(217,217,217,1);
   position: absolute;
   top: 4387px;
-  left: 735px;
+  left: 935px;
   font-family: Actor;
   font-weight: Regular;
   font-size: 16px;
   opacity: 1;
   text-align: center;
 }
-.v247_59 {
+.texto_numero {
   width: 120px;
   color: rgba(217,217,217,1);
   position: absolute;
   top: 4350px;
-  left: 735px;
+  left: 935px;
   font-family: Actor;
   font-weight: Regular;
   font-size: 16px;
   opacity: 1;
   text-align: center;
 }
-.v247_60 {
+.caja_correo {
   width: 314px;
   height: 39px;
-  background: url("../images/v247_60.png");
+  background: rgba(217,217,217,1);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
   top: 4350px;
-  left: 985px;
-  overflow: hidden;
-}
-.v247_61 {
-  width: 314px;
-  height: 39px;
-  background: rgba(217,217,217,1);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  left: 1335px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   overflow: hidden;
 }
-.v247_62 {
+.caja_txt_correo {
   width: 216px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -588,77 +574,59 @@ body {
   opacity: 1;
   text-align: left;
 }
-.name {
-  color: #fff;
-}
-.v247_64 {
+.subtitulo_tu_jardin {
   width: 583px;
   color: rgba(87,133,94,1);
   position: absolute;
   top: 273px;
-  left: 112px;
+  left: 250px;
   font-family: Arimo Hebrew Subset;
   font-weight: Bold;
   font-size: 65px;
   opacity: 1;
   text-align: left;
 }
-.v247_65 {
-  width: 583px;
-  color: rgba(87,133,94,1);
-  position: absolute;
-  top: 273px;
-  left: 112px;
-  font-family: Arimo Hebrew Subset;
-  font-weight: Bold;
-  font-size: 65px;
-  opacity: 1;
-  text-align: left;
-}
-.v247_66 {
+.descripcion_conoce {
   width: 583px;
   color: rgba(0,0,0,1);
   position: absolute;
-  top: 445px;
-  left: 112px;
+  top: 450px;
+  left: 250px;
   font-family: Actor;
   font-weight: Regular;
   font-size: 22px;
   opacity: 1;
   text-align: left;
 }
-.name {
-  color: #fff;
-}
-.v247_68 {
+.subtitulo_descargala {
   width: 638px;
   color: rgba(255,255,255,1);
   position: absolute;
   top: 3890px;
-  left: 404px;
+  left: 645px;
   font-family: Arimo Hebrew Subset;
   font-weight: Bold;
   font-size: 45px;
   opacity: 1;
   text-align: center;
 }
-.v247_69 {
+.descripcion_unete {
   width: 516px;
   color: rgba(245,245,245,1);
   position: absolute;
   top: 4029px;
-  left: 459px;
+  left: 710px;
   font-family: Actor;
   font-weight: Regular;
   font-size: 25px;
   opacity: 1;
   text-align: center;
 }
-.v247_70 {
+.subtitulo_caracteristicas {
   width: 890px;
   color: rgba(255,255,255,1);
   position: absolute;
-  top: 2115px;
+  top: 2085px;
   left: 90px;
   font-family: Arimo Hebrew Subset;
   font-weight: Regular;
@@ -666,70 +634,60 @@ body {
   opacity: 1;
   text-align: left;
 }
-.v247_71 {
+.sub_subtitulo_comunidad {
   width: 264px;
   color: rgba(255,255,255,1);
   position: absolute;
-  top: 2666px;
-  left: 1015px;
+  top: 2680px;
+  left: 1390px;
   font-family: Arimo Hebrew Subset;
   font-weight: Bold;
   font-size: 36px;
   opacity: 1;
   text-align: center;
 }
-.v247_72 {
+.sub_subtitulo_escaneo {
   width: 264px;
   color: rgba(255,255,255,1);
   position: absolute;
   top: 2666px;
-  left: 588px;
+  left: 814px;
   font-family: Arimo Hebrew Subset;
   font-weight: Bold;
   font-size: 36px;
   opacity: 1;
   text-align: center;
 }
-.v247_73 {
+.sub_subtitulo_noticias {
   width: 264px;
   color: rgba(255,255,255,1);
   position: absolute;
   top: 2666px;
-  left: 161px;
+  left: 241px;
   font-family: Arimo Hebrew Subset;
   font-weight: Bold;
   font-size: 36px;
   opacity: 1;
   text-align: center;
 }
-.v247_94 {
+.btn_enviar {
   width: 117px;
   height: 39px;
-  background: url("../images/v247_94.png");
+  background: rgba(122,122,122,1);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
   top: 4350px;
-  left: 1182px;
-  overflow: hidden;
-}
-.v247_95 {
-  width: 117px;
-  height: 39px;
-  background: rgba(122,122,122,1);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  left: 1532px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   overflow: hidden;
 }
-.v247_96 {
+.btn_txt_enviar {
   width: 50px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -741,22 +699,22 @@ body {
   opacity: 1;
   text-align: left;
 }
-.v247_103 {
+.etiqueta_inicio {
   width: 46px;
   color: rgba(0,0,0,1);
   position: absolute;
   top: 40px;
-  left: 434px;
+  left: 473px;
   font-family: Actor;
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
   text-align: left;
 }
-.v247_104 {
+.logo_encabezado {
   width: 192px;
   height: 35px;
-  background: url("../images/v247_104.png");
+  background: url("logo_encabezado.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -766,10 +724,10 @@ body {
   left: 86px;
   overflow: hidden;
 }
-.v247_105 {
+.img_logo_encabezado {
   width: 52px;
   height: 52px;
-  background: url("../images/v247_105.png");
+  background: url("img_logo_encabezado.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -779,10 +737,10 @@ body {
   left: 28px;
   overflow: hidden;
 }
-.v247_106 {
+.logo_pie {
   width: 228px;
   height: 53px;
-  background: url("../images/v247_106.png");
+  background: url("logo_pie.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -792,10 +750,10 @@ body {
   left: 149px;
   overflow: hidden;
 }
-.v247_107 {
+.logo_facebook {
   width: 39px;
   height: 39px;
-  background: url("../images/v247_107.png");
+  background: url("logo_facebook.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -805,10 +763,10 @@ body {
   left: 169px;
   overflow: hidden;
 }
-.v247_108 {
+.logo_twitter {
   width: 39px;
   height: 39px;
-  background: url("../images/v247_108.png");
+  background: url("logo_twitter.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -818,10 +776,10 @@ body {
   left: 219px;
   overflow: hidden;
 }
-.v247_109 {
+.logo_instagram {
   width: 39px;
   height: 39px;
-  background: url("../images/v247_109.png");
+  background: url("logo_instagram.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -831,10 +789,10 @@ body {
   left: 269px;
   overflow: hidden;
 }
-.v247_110 {
+.logo_youtube {
   width: 39px;
   height: 39px;
-  background: url("../images/v247_110.png");
+  background: url("logo_youtube.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -844,187 +802,188 @@ body {
   left: 319px;
   overflow: hidden;
 }
-.v247_111 {
+.descripcion_noticias {
   width: 264px;
   color: rgba(245,245,245,1);
   position: absolute;
   top: 2760px;
-  left: 161px;
+  left: 241px;
   font-family: Actor;
   font-weight: Regular;
   font-size: 22px;
   opacity: 1;
   text-align: center;
 }
-.v247_112 {
+.descripcion_escaneo {
   width: 264px;
   color: rgba(245,245,245,1);
   position: absolute;
   top: 2760px;
-  left: 589px;
+  left: 814px;
   font-family: Actor;
   font-weight: Regular;
   font-size: 22px;
   opacity: 1;
   text-align: center;
 }
-.v247_113 {
+.descripcion_comunidad {
   width: 264px;
   color: rgba(245,245,245,1);
   position: absolute;
   top: 2760px;
-  left: 1015px;
+  left: 1390px;
   font-family: Actor;
   font-weight: Regular;
   font-size: 22px;
   opacity: 1;
   text-align: center;
 }
-.v247_114 {
+.subtitulo_quienes {
   width: 541px;
   color: rgba(87,133,94,1);
   position: absolute;
   top: 1464px;
-  left: 88px;
+  left: 250px;
   font-family: Arimo Hebrew Subset;
   font-weight: Regular;
   font-size: 45px;
   opacity: 1;
   text-align: left;
 }
-.v247_115 {
-  width: 280px;
-  height: 560px;
-  background: url("../images/v247_115.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 165px;
-  left: 1076px;
-  overflow: hidden;
-}
-.v247_116 {
+.celular1 {
   width: 281px;
   height: 559px;
-  background: url("../images/v247_116.png");
+  background: url("celular1.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
   top: 165px;
-  left: 795px;
+  left: 1070px;
   overflow: hidden;
 }
-.v247_117 {
+.celular2 {
+  width: 280px;
+  height: 560px;
+  background: url("celular2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 165px;
+  left: 1395px;
+  overflow: hidden;
+}
+.btn1_googleplay {
   width: 242px;
   height: 94px;
-  background: url("../images/v247_117.png");
+  background: url("btn_googleplay.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
   top: 550px;
-  left: 125px;
+  left: 250px;
   overflow: hidden;
 }
-.v247_118 {
+.btn1_appstore {
   width: 242px;
   height: 77px;
-  background: url("../images/v247_118.png");
+  background: url("btn_appstore.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
   top: 559px;
-  left: 439px;
+  left: 564px;
   overflow: hidden;
 }
-.v247_120 {
+.logo_quienes {
   width: 334px;
   height: 324px;
-  background: url("../images/v247_120.png");
+  background: url("logo_quienes.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
   top: 1550px;
-  left: 945px;
+  left: 1225px;
   overflow: hidden;
 }
-.v247_123 {
+.img_noticias {
   width: 232px;
   height: 470px;
-  background: url("../images/v247_123.png");
+  background: url("img_noticias.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
   top: 2188px;
-  left: 177px;
+  left: 255px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
   overflow: hidden;
 }
-.v247_125 {
+.img_escaneo {
   width: 235px;
   height: 470px;
-  background: url("../images/v247_125.png");
+  background: url("img_escaneo.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
   top: 2188px;
-  left: 603px;
+  left: 828px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
   overflow: hidden;
 }
-.v247_127 {
+.img_comunidad {
   width: 237px;
   height: 470px;
-  background: url("../images/v247_127.png");
+  background: url("img_comunidad.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
   top: 2188px;
-  left: 1029px;
+  left: 1404px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
   overflow: hidden;
 }
-.v247_128 {
+.caja_culantrillo {
   width: 200px;
   height: 242px;
-  background: url("../images/v247_128.png");
+  background: none;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
   top: 3171px;
-  left: 124px;
+  left: 388px;
+  border: 2px solid rgba(0,0,0,1);
   overflow: hidden;
 }
-.v247_129 {
+.img_culantrillo {
   width: 200px;
   height: 178px;
-  background: url("../images/v247_129.png");
+  background: url("img_culantrillo.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1034,42 +993,18 @@ body {
   left: 0px;
   overflow: hidden;
 }
-.v247_130 {
-  width: 200px;
-  height: 242px;
-  background: url("../images/v247_130.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.v247_131 {
+.fondoverde_culantrillo {
   width: 200px;
   height: 46px;
   background: rgba(139,175,146,1);
   opacity: 1;
   position: absolute;
   top: 196px;
-  left: 0px;
-  border: 1.5px solid rgba(0,0,0,1);
-  overflow: hidden;
-}
-.v247_132 {
-  width: 200px;
-  height: 242px;
-  background: rgba(87,133,94,0);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  left: -2px;
   border: 2px solid rgba(0,0,0,1);
   overflow: hidden;
 }
-.v247_133 {
+.palabra_culantrillo {
   width: 96px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -1081,36 +1016,24 @@ body {
   opacity: 1;
   text-align: center;
 }
-.v247_134 {
+.caja_palmera {
   width: 200px;
   height: 242px;
-  background: url("../images/v247_134.png");
+  background: none;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
   top: 3171px;
-  left: 372px;
+  left: 636px;
+  border: 2px solid rgba(0,0,0,1);
   overflow: hidden;
 }
-.v247_135 {
+.img_palmera {
   width: 183px;
   height: 188px;
-  background: url("../images/v247_135.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 5px;
-  left: 9px;
-  overflow: hidden;
-}
-.v247_136 {
-  width: 200px;
-  height: 242px;
-  background: url("../images/v247_136.png");
+  background: url("img_palmera.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1120,29 +1043,18 @@ body {
   left: 0px;
   overflow: hidden;
 }
-.v247_137 {
+.fondoverde_palmera {
   width: 200px;
   height: 46px;
   background: rgba(139,175,146,1);
   opacity: 1;
   position: absolute;
-  top: 195px;
-  left: 0px;
-  border: 1.5px solid rgba(0,0,0,1);
-  overflow: hidden;
-}
-.v247_138 {
-  width: 200px;
-  height: 242px;
-  background: rgba(87,133,94,0);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 197px;
+  left: -2px;
   border: 2px solid rgba(0,0,0,1);
   overflow: hidden;
 }
-.v247_139 {
+.palabra_palmera {
   width: 161px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -1154,20 +1066,20 @@ body {
   opacity: 1;
   text-align: center;
 }
-.v247_152 {
-  width: 258px;
-  height: 70px;
-  background: url("../images/v247_152.png");
+.caja_btn_ver {
+  width: 263px;
+  height: 74px;
+  background: none;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
   top: 3488px;
-  left: 591px;
+  left: 855px;
   overflow: hidden;
 }
-.v247_153 {
+.fondo_btn_ver {
   width: 258px;
   height: 70px;
   background: rgba(194,221,155,1);
@@ -1182,7 +1094,7 @@ body {
   border-bottom-right-radius: 35px;
   overflow: hidden;
 }
-.v247_154 {
+.palabra_ver_mas {
   width: 127px;
   color: rgba(0,0,0,1);
   position: absolute;
@@ -1194,10 +1106,10 @@ body {
   opacity: 1;
   text-align: left;
 }
-.v247_119 {
+.fondo_hoja {
   width: 100%;
   height: 545px;
-  background: url("../images/v247_119.png");
+  background: url("fondo_hoja.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1207,29 +1119,37 @@ body {
   left: 0px;
   overflow: hidden;
 }
-.v249_157 {
+.fondo_ho{
+  width:50px;
+  height:50px;
+  background: none;
+  position:absolute;
+  top:1313px;
+  left:0px;
+}
+.img_btn2_googleplay {
   width: 242px;
   height: 94px;
-  background: url("../images/v249_157.png");
+  background: url("btn_googleplay.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
   top: 4114px;
-  left: 440px;
+  left: 691px;
   overflow: hidden;
 }
-.v249_158 {
+.img_btn2_appstore {
   width: 242px;
   height: 77px;
-  background: url("../images/v249_158.png");
+  background: url("btn_appstore.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
   top: 4122px;
-  left: 770px;
+  left: 1021px;
   overflow: hidden;
 }
