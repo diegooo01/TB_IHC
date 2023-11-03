@@ -9,7 +9,7 @@ Los fundadores de FloraCompany y desarrolladores de FloraCare somos:
 - Criollo De La Cruz, Diego Anderson - u202219639
 - Santisteban Palomino, Ian Haziel - u202214059
 - Valle Zuta, Abel Andrés - u202210297
-
+- Villanueva Ponce, Miranda Ariana - u202010521
 
 Con el fin de desarrollar un producto que satisfaga las necesidades de nuestros clientes, Flora Care se enfocará en los siguientes segmentos de la población:
 
