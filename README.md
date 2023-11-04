@@ -27,3 +27,8 @@ Según la Cámara Peruana de la Construcción, en 2020 se registró un aumento d
 
 
 Principales características de FloraCare:
+1. Base de datos extensa de plantas: La aplicación contará con una amplia base de datos de plantas que permitirá a los usuarios identificar plantas de forma precisa mediante escaneo, lo que es útil para personas que no tienen conocimientos especializados en jardinería.
+2. Comunidad en línea: Ofrecerá una comunidad en línea donde los amantes de las plantas pueden compartir experiencias y conocimientos, lo que fomenta la conexión entre usuarios y les permite aprender nuevas técnicas de cuidado.
+3. Identificación de plantas mediante imágenes: La capacidad de identificar plantas a través de imágenes es una característica distintiva que puede ayudar a diferenciar su aplicación de la competencia.
+4. Notificaciones personalizadas de cuidado: La aplicación enviará notificaciones a los usuarios con consejos y recordatorios personalizados sobre el cuidado de sus plantas específicas. Esto satisface la necesidad de respuestas rápidas y precisas para mantener las plantas saludables.
+5. Planificador de jardín: Una función que permite a los usuarios planificar la disposición de sus plantas en un jardín virtual, lo que puede ser útil para diseñar paisajes y conocer las necesidades de espacio de cada planta.
